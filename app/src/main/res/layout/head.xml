@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/blue">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_person"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:src="@mipmap/user"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:textColor="#ffffff"
+        android:text="DemoVei"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="18dp"
+        android:text="人生是一场没有尽头的旅行！"/>
+
+</LinearLayout>

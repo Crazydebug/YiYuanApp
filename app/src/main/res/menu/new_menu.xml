@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/favorite"
+            android:checkable="true"
+            android:title="     会员"/>
+    </group>
+
+    <item
+        android:id="@+id/wallet"
+        android:title="     钱包"/>
+    <item
+        android:id="@+id/file"
+        android:title="     文件"/>
+
+</menu>

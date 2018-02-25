@@ -8,26 +8,136 @@
     android:layout_height="match_parent"
     tools:context="com.example.yiyuanapp.activities.StartActivity">
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+            android:layout_height="60dp"
+            android:background="#f0f000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-        <TextView
+            <ImageView
+                android:id="@+id/blue_menu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/mm"
+                android:background="@drawable/blue"
+                android:layout_margin="20dp"/>
+
+             <TextView
+                 android:layout_width="60dp"
+                 android:layout_height="30dp"
+                 android:layout_weight="1"
+                 android:layout_gravity="center"
+                 android:text="易园APP"
+                 android:textStyle="bold"
+                 android:textColor="#000000"
+                 android:textSize="20sp"
+                 android:layout_marginLeft="16dp"/>
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/back"
+                android:background="@drawable/blue"
+                android:layout_margin="20dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:background="@drawable/start_show"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:text="This is menu"
-            android:textSize="30sp"
-            android:background="#FFF"/>
+            android:layout_height="540dp">
 
-    </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="欢迎使用易园APP"
+                android:textSize="40sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#f0f000"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/zixi_study"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我要上自习"
+                android:textStyle="bold"
+                android:background="#ff69b4"/>
+            <Button
+                android:id="@+id/school_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/zixi_study"
+                android:layout_toLeftOf="@+id/zixi_study"
+                android:text="校园资讯"
+                android:textStyle="bold"
+                android:background="#ff69b4"/>
+            <Button
+                android:id="@+id/buy_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/school_news"
+                android:layout_toRightOf="@+id/school_news"
+                android:text="二手信息"
+                android:textStyle="bold"
+                android:background="#ff69b4"/>
+            <Button
+                android:id="@+id/apply_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/zixi_study"
+                android:layout_toRightOf="@+id/zixi_study"
+                android:text="培训报名"
+                android:textStyle="bold"
+                android:background="#ff69b4"/>
+            <Button
+                android:id="@+id/comfortable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zixi_study"
+                android:layout_toLeftOf="@+id/zixi_study"
+                android:text="生活服务"
+                android:textStyle="bold"
+                android:background="#ff69b4"/>
+            <Button
+                android:id="@+id/work_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zixi_study"
+                android:layout_toRightOf="@+id/zixi_study"
+                android:text="兼职推荐"
+                android:background="#ff69b4"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/user_fankui"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="用户反馈"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav"
+        android:layout_gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:headerLayout="@layout/head"
+        app:menu="@menu/new_menu">
+
+    </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>
