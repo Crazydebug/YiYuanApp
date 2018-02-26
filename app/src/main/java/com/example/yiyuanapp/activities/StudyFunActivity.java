@@ -37,7 +37,8 @@ public class StudyFunActivity extends BaseActivity implements View.OnClickListen
 
                 break;
             case R.id.people_map:
-
+                Intent intent3 = new Intent(StudyFunActivity.this,ClassRomeActivity.class);
+                startActivity(intent3);
                 break;
                 default:
         }

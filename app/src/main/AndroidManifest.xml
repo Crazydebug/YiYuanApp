@@ -34,18 +34,20 @@
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.StartActivity" />
         <activity android:name=".activities.SchoolActivity" />
-        <activity android:name=".activities.LocationActivity"
-            android:label="学校附近地图"/>
+        <activity
+            android:name=".activities.LocationActivity"
+            android:label="学校附近地图" />
 
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
             android:process=":remote" />
 
-        <activity android:name=".activities.StudyFunActivity"
-            android:label="自习功能选择">
-
-        </activity>
+        <activity
+            android:name=".activities.StudyFunActivity"
+            android:label="自习功能选择"></activity>
+        <activity android:name=".activities.ClassRomeActivity"
+            android:label="选择要查询的教学楼"></activity>
     </application>
 
 </manifest>
