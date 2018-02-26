@@ -52,7 +52,7 @@ public class StartActivity extends BaseActivity implements View.OnClickListener{
         zixi_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(StartActivity.this,LocationActivity.class);
+                Intent intent1 = new Intent(StartActivity.this,StudyFunActivity.class);
                 startActivity(intent1);
                 finish();
             }

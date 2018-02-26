@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/studyfun"
+    tools:context="com.example.yiyuanapp.activities.StudyFunActivity">
+
+    <Button
+        android:id="@+id/school_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_gravity="center"
+        android:text="学校附近地图查看"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/study_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="距离自习教室距离"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/people_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前自习人数预测"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
